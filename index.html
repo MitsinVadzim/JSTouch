@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		
+		<div id="leftSide" class="side">
+			Левая сторона
+			<div onclick="toBringBack()" class="leftWeight">
+				
+			</div>
+		</div>
+
+		<div class="barbell" class="side"></div>
+
+		
+		<div id="rightSide" class="side">
+			Правая сторона
+			<div onclick="toBringBack()" class="rightWeight">
+				
+			</div>
+		</div>
+	</div>
+	<div class="form">
+		<input type="text" id="field">
+		<button onclick="addWeight()">Add weight</button>
+		<br>
+		Список блинов
+		<div id="list">
+			<div onclick="setLeftSide()" oncontextmenu="setRightSide()"></div>
+		</div>
+	</div>
+
+	<br>Результат:
+	<div id="result"></div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
